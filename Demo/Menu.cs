@@ -58,5 +58,17 @@ namespace Demo
             Bai07 bai07 = new Bai07();
             bai07.ShowDialog();
         }
+
+        private void btn08_Click(object sender, EventArgs e)
+        {
+            UploadImageToDatabase bai08 = new UploadImageToDatabase();
+            bai08.ShowDialog();
+        }
+
+        private void btn09_Click(object sender, EventArgs e)
+        {
+            NhanVienToDatabase bai09 = new NhanVienToDatabase();
+            bai09.ShowDialog();
+        }
     }
 }

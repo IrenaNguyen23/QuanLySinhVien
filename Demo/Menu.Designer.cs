@@ -35,6 +35,8 @@
             this.btn05 = new System.Windows.Forms.Button();
             this.btn06 = new System.Windows.Forms.Button();
             this.btn07 = new System.Windows.Forms.Button();
+            this.btn08 = new System.Windows.Forms.Button();
+            this.btn09 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn01
@@ -106,11 +108,33 @@
             this.btn07.UseVisualStyleBackColor = true;
             this.btn07.Click += new System.EventHandler(this.btn07_Click);
             // 
+            // btn08
+            // 
+            this.btn08.Location = new System.Drawing.Point(566, 143);
+            this.btn08.Name = "btn08";
+            this.btn08.Size = new System.Drawing.Size(75, 23);
+            this.btn08.TabIndex = 7;
+            this.btn08.Text = "UpAnh";
+            this.btn08.UseVisualStyleBackColor = true;
+            this.btn08.Click += new System.EventHandler(this.btn08_Click);
+            // 
+            // btn09
+            // 
+            this.btn09.Location = new System.Drawing.Point(82, 220);
+            this.btn09.Name = "btn09";
+            this.btn09.Size = new System.Drawing.Size(75, 23);
+            this.btn09.TabIndex = 8;
+            this.btn09.Text = "NhanVien";
+            this.btn09.UseVisualStyleBackColor = true;
+            this.btn09.Click += new System.EventHandler(this.btn09_Click);
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btn09);
+            this.Controls.Add(this.btn08);
             this.Controls.Add(this.btn07);
             this.Controls.Add(this.btn06);
             this.Controls.Add(this.btn05);
@@ -133,5 +157,7 @@
         private System.Windows.Forms.Button btn05;
         private System.Windows.Forms.Button btn06;
         private System.Windows.Forms.Button btn07;
+        private System.Windows.Forms.Button btn08;
+        private System.Windows.Forms.Button btn09;
     }
 }

@@ -29,6 +29,11 @@
         private void InitializeComponent()
         {
             this.dgvNhanVien = new System.Windows.Forms.DataGridView();
+            this.colMaNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colTenNv = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colTuoi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colGioiTinh = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.colImage = new System.Windows.Forms.DataGridViewImageColumn();
             this.ckGender = new System.Windows.Forms.CheckBox();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
@@ -42,17 +47,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pbImage = new System.Windows.Forms.PictureBox();
             this.btnImage = new System.Windows.Forms.Button();
-            this.colMaNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colTenNv = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colTuoi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colGioiTinh = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.colImage = new System.Windows.Forms.DataGridViewImageColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbImage)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvNhanVien
             // 
+            this.dgvNhanVien.AllowUserToAddRows = false;
+            this.dgvNhanVien.AllowUserToDeleteRows = false;
             this.dgvNhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvNhanVien.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colMaNV,
@@ -65,6 +67,45 @@
             this.dgvNhanVien.Size = new System.Drawing.Size(798, 211);
             this.dgvNhanVien.TabIndex = 10;
             this.dgvNhanVien.SelectionChanged += new System.EventHandler(this.dgvNhanVien_SelectionChanged);
+            // 
+            // colMaNV
+            // 
+            this.colMaNV.DataPropertyName = "Id";
+            this.colMaNV.HeaderText = "Mã Nhân Viên";
+            this.colMaNV.Name = "colMaNV";
+            this.colMaNV.ReadOnly = true;
+            this.colMaNV.Width = 200;
+            // 
+            // colTenNv
+            // 
+            this.colTenNv.DataPropertyName = "Name";
+            this.colTenNv.HeaderText = "Tên Nhân Viên";
+            this.colTenNv.Name = "colTenNv";
+            this.colTenNv.ReadOnly = true;
+            this.colTenNv.Width = 300;
+            // 
+            // colTuoi
+            // 
+            this.colTuoi.DataPropertyName = "Age";
+            this.colTuoi.HeaderText = "Tuổi";
+            this.colTuoi.Name = "colTuoi";
+            this.colTuoi.ReadOnly = true;
+            // 
+            // colGioiTinh
+            // 
+            this.colGioiTinh.DataPropertyName = "Gender";
+            this.colGioiTinh.HeaderText = "Giới Tính ";
+            this.colGioiTinh.Name = "colGioiTinh";
+            this.colGioiTinh.ReadOnly = true;
+            this.colGioiTinh.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.colGioiTinh.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // colImage
+            // 
+            this.colImage.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.colImage.HeaderText = "Hình ảnh";
+            this.colImage.Name = "colImage";
+            this.colImage.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
             // ckGender
             // 
@@ -182,45 +223,6 @@
             this.btnImage.Text = "Thêm ảnh";
             this.btnImage.UseVisualStyleBackColor = true;
             this.btnImage.Click += new System.EventHandler(this.btnImage_Click);
-            // 
-            // colMaNV
-            // 
-            this.colMaNV.DataPropertyName = "Id";
-            this.colMaNV.HeaderText = "Mã Nhân Viên";
-            this.colMaNV.Name = "colMaNV";
-            this.colMaNV.ReadOnly = true;
-            this.colMaNV.Width = 200;
-            // 
-            // colTenNv
-            // 
-            this.colTenNv.DataPropertyName = "Name";
-            this.colTenNv.HeaderText = "Tên Nhân Viên";
-            this.colTenNv.Name = "colTenNv";
-            this.colTenNv.ReadOnly = true;
-            this.colTenNv.Width = 300;
-            // 
-            // colTuoi
-            // 
-            this.colTuoi.DataPropertyName = "Age";
-            this.colTuoi.HeaderText = "Tuổi";
-            this.colTuoi.Name = "colTuoi";
-            this.colTuoi.ReadOnly = true;
-            // 
-            // colGioiTinh
-            // 
-            this.colGioiTinh.DataPropertyName = "Gender";
-            this.colGioiTinh.HeaderText = "Giới Tính ";
-            this.colGioiTinh.Name = "colGioiTinh";
-            this.colGioiTinh.ReadOnly = true;
-            this.colGioiTinh.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.colGioiTinh.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // colImage
-            // 
-            this.colImage.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.colImage.HeaderText = "Hình ảnh";
-            this.colImage.Name = "colImage";
-            this.colImage.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
             // Bai07
             // 
